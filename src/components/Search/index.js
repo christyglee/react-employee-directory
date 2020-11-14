@@ -1,5 +1,4 @@
 import React, { useContext } from "react";
-import "./style.css";
 import EmployeeDataContext from "../../utils/EmployeeDataContext";
 
 const Search = () => {
@@ -15,9 +14,6 @@ const Search = () => {
                     aria-label="Search"
                     onChange={e => context.handleSearchChange(e)}
                 />
-                <button className="btn my-2 my-sm-0" type="submit">
-                    Search
-                 </button>
             </form>
         </div>
     );

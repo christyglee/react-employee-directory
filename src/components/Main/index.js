@@ -4,9 +4,9 @@ import DataArea from "../DataArea";
 
 function Main () {
     return (
-    
+        <>
         <DataArea />
-    
+        </>
     );
   };
 

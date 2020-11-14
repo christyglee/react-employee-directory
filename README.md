@@ -1,70 +1,80 @@
-# Getting Started with Create React App
+# Employee Directory
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The Employee Directory application allows the user to view employees. Users can view their employees' picture, full name, phone number, email address, and date of birth. In addition, users can sort each field and search for specific employees by name.
 
-## Available Scripts
+<br>
 
-In the project directory, you can run:
+![alt-text](employee-directory.gif)
 
-### `npm start`
+<br>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Coding Process
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+The application is built with React.js. The application is component based, it keeps track of event changes using state, and updates to the page render dynamically and without needing to refresh the page.
 
-### `npm test`
+<br>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Instead of searching and using personal information and images of employees, I went with incorporating a random user generator API from [randomuser.me](randomuser.me).
 
-### `npm run build`
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+import axios from "axios";
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+export default{ 
+    getUsers:function(){    
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+        return axios.get("https://randomuser.me/api/?results=200&nat=us");
+    }
+};
 
-### `npm run eject`
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+<br>
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+To view this application, please navigate to the **Deployed Link** below or [click here](https://christyglee.github.io/react-employee-directory/) to view.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+<br>
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Powered By
 
-## Learn More
+* [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+* [Node.js](https://nodejs.org/en/)
+* [npm install](https://nodejs.org/en/)
+* [axios js](https://www.npmjs.com/package/axios)
+* [React js](https://reactjs.org/)
+* [Bootstrap](https://getbootstrap.com/)
+* [Google Fonts](https://fonts.google.com/)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<br>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Other Resources Used
 
-### Code Splitting
+* [Visual Studio Code](https://code.visualstudio.com/)
+    * [How to install VS Code](https://code.visualstudio.com/docs/setup/setup-overview)
+* [GitBash](https://gitforwindows.org/)
+    * [Download GitBash for Windows](https://git-scm.com/downloads)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+<br>
 
-### Analyzing the Bundle Size
+## Deployed Link
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+* [See Deployed Link](https://christyglee.github.io/react-employee-directory/)
 
-### Making a Progressive Web App
+<br>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Author
+**Christy Lee** 
 
-### Advanced Configuration
+- [Github](https://github.com/christyglee)
+- [LinkedIn](https://www.linkedin.com/in/christy-g-lee/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+<br> 
 
-### Deployment
+## Acknowledgments
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+* [Google-Fu](https://www.google.com)
+* [w3schools](https://www.w3schools.com/)
+* [Stack Overflow](https://stackoverflow.com/search?q=over)
+* [Node.js](https://nodejs.org/en/)
+* [npm install](https://nodejs.org/en/)
+* [React js](https://reactjs.org/)
